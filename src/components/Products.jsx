@@ -7,7 +7,7 @@ const Products = () => {
     const [data, setData] = useState([])
     const [error, setError] = useState(false)
     useEffect(() => {
-        axios.get('https://localhost:5000/api/product').then((res) => {
+        axios.get('https://ecommerce-backend-8fgc.onrender.com/api/product').then((res) => {
             console.log(res.data)
             setData(res.data.products)
         }).catch((err) => {
